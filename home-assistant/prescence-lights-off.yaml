@@ -1,5 +1,5 @@
 blueprint:
-  name: Presence Light - Off
+  name: Presence Light - Off - v2
   description: Turn off a light when presence is not detected or it's light.
   domain: automation
   input:
