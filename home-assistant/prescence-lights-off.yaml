@@ -1,6 +1,6 @@
 blueprint:
-  name: Presence-activated Light
-  description: Turn on a light when presence is detected.
+  name: Presence Light - Off
+  description: Turn off a light when presence is not detected or it's light.
   domain: automation
   input:
     presence_entity:
@@ -23,8 +23,8 @@ blueprint:
           multiple: false
     light_threshold:
       name: Light threshold
-      description: Light sensor‘s lower threshold
-      default: 200
+      description: Light sensor‘s threshold
+      default: 1
       selector:
         number:
           min: 0
@@ -46,7 +46,6 @@ blueprint:
           max: 100
           unit_of_measurement: percentage
 
-# Switch off
 trigger:
   - trigger: state
     entity_id: !input presence_entity
