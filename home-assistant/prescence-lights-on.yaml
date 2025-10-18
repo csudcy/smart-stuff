@@ -61,7 +61,7 @@ conditions:
   #   state: "off"
   - condition: state
     entity_id: !input presence_entity
-    state: "off"
+    state: "on"
   - condition: numeric_state
     entity_id: !input light_sensor
     below: !input light_threshold
