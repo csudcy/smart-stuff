@@ -1,5 +1,5 @@
 blueprint:
-  name: Presence Light - Off - v2
+  name: Presence Light - Off - v3
   description: Turn off a light when presence is not detected or it's light.
   domain: automation
   input:
@@ -46,10 +46,10 @@ trigger:
     entity_id: !input light_sensor
     above: !input light_threshold
 
-conditions:
-  - condition: state
-    entity_id: !input light_target
-    state: "on"
+# conditions:
+#   - condition: state
+#     entity_id: !input light_target
+#     state: "on"
 
 action:
   - alias: "Turn off the light"
