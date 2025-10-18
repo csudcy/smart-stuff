@@ -46,7 +46,7 @@ trigger:
     entity_id: !input light_sensor
     above: !input light_threshold
 
-condition:
+conditions:
   - condition: state
     entity_id: !input light_target
     state: "on"
