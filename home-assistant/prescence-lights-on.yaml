@@ -1,5 +1,5 @@
 blueprint:
-  name: Presence Light - On - v3
+  name: Presence Light - On - v4
   description: Turn on a light when presence is detected and it's dark.
   domain: automation
   input:
