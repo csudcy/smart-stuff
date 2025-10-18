@@ -36,15 +36,6 @@ blueprint:
         target:
           entity:
             domain: light
-    bright_percentage:
-      name: Bright Percentage
-      description: Brightness level that the light will turn into once is turned on
-      default: 100
-      selector:
-        number:
-          min: 0
-          max: 100
-          unit_of_measurement: percentage
 
 trigger:
   - trigger: state
